@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.animate{
+				width: 200px;
+				height: 200px;
+				background-color: #008000;
+				transition:all 1s; 
+				overflow: hidden;
+				margin: 0;
+				padding: 0;
+				top: 0px;
+				left: 0px;
+				position: absolute;
+			}
+			.animate:hover{
+				transform: translate(-20px,0px);
+			}
+			
+			body,figure,h2,p,figcaption{margin: 0;padding: 0;}
+			figure{position: relative;width: 33%;overflow: hidden;height: 300px;background-color: #1ABC9C;}
+			figcaption{position: absolute;color: #000000;font-family: "微软雅黑";top: 0px;left: 0px;}
+			.tes1{
+				background-color: #000000;
+			}
+			figure figcaption p{transition: all; animation-duration: .35s;}
+			figure figcaption p:nth-of-type(1){transition-delay: 0.1s;}
+			figure figcaption p:nth-of-type(2){transition-delay: 0.2s;}
+			figure figcaption p:nth-of-type(3){transition-delay: 0.3s;}
+			figure img{transition: all 0.5s;}
+			.tes1 img{opacity: 0.8;}
+			.tes1 figcaption p{background: #fff;color: #34495E; margin-left: 3px;text-align: center;margin-bottom: 3px;transform: translate(-120px,0px);}
+			.tes1 figcaption{padding: 20px;}
+			.tes1:hover figcaption p{transform: translate(0px,0px);}
+			.tes1:hover img{transform: scale(1.2,1.2);opacity: 0.5;}
+			
+		</style>
+	</head>
+	<body>
+<!--		<div class="animate"></div>
+-->		<figure class="tes1">
+			<img src="img/header.png" />
+			<figcaption>
+				<h2>wdwfaf</h2>
+				<p>22e2r</p>
+				<p>22e2r</p>
+				<p>22e2r</p>
+			</figcaption>
+		</figure>
+	</body>
+</html>
